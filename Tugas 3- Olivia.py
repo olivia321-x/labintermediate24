@@ -14,7 +14,7 @@ def main(secret_word):
             print("have",attempt,"attempt")
         if attempt<=0:
             print("done")
-            print('you lose')
+            print('You lose')
             break
         list.append(x)
         print(list)
@@ -28,7 +28,7 @@ def main(secret_word):
             print("Good job")
             if "_" not in ans:
                 print('Congratulations! You complete the task','"',secret_word,'"')
-                print('you win')
+                print('You win')
                 break
         else:
             print("Wrong guess.Try again")
