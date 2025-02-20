@@ -17,7 +17,6 @@ def main(secret_word):
                 print("Still have ",attempt,"attempt")
                 continue
             else:
-                attempt=attempt-1
                 print("have",attempt,"attempt")
             if attempt<=0:
                 print("done")
@@ -39,6 +38,7 @@ def main(secret_word):
                     score=score+1
                     break
             else:
+                attempt=attempt-1
                 print("Wrong guess.Try again")
     updatetext(attempt,ans,secret_word,list)
 def lanjut():
